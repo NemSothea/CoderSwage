@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33813DB720074005000E4FD8 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33813DB620074005000E4FD8 /* ProductCell.swift */; };
+		33813DB920074603000E4FD8 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33813DB820074603000E4FD8 /* Product.swift */; };
+		33813DBB200766D9000E4FD8 /* ProductVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33813DBA200766D9000E4FD8 /* ProductVC.swift */; };
 		3390A6CA2005F21D00D8CC27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3390A6C92005F21D00D8CC27 /* AppDelegate.swift */; };
-		3390A6CC2005F21D00D8CC27 /* CoderSwagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3390A6CB2005F21D00D8CC27 /* CoderSwagViewController.swift */; };
+		3390A6CC2005F21D00D8CC27 /* CategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3390A6CB2005F21D00D8CC27 /* CategoryVC.swift */; };
 		3390A6CF2005F21D00D8CC27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3390A6CD2005F21D00D8CC27 /* Main.storyboard */; };
 		3390A6D12005F21D00D8CC27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3390A6D02005F21D00D8CC27 /* Assets.xcassets */; };
 		3390A6D42005F21D00D8CC27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3390A6D22005F21D00D8CC27 /* LaunchScreen.storyboard */; };
@@ -18,9 +21,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		33813DB620074005000E4FD8 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		33813DB820074603000E4FD8 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		33813DBA200766D9000E4FD8 /* ProductVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductVC.swift; sourceTree = "<group>"; };
 		3390A6C62005F21D00D8CC27 /* CoderSwage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoderSwage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3390A6C92005F21D00D8CC27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3390A6CB2005F21D00D8CC27 /* CoderSwagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoderSwagViewController.swift; sourceTree = "<group>"; };
+		3390A6CB2005F21D00D8CC27 /* CategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryVC.swift; sourceTree = "<group>"; };
 		3390A6CE2005F21D00D8CC27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3390A6D02005F21D00D8CC27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3390A6D32005F21D00D8CC27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -77,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				3390A6DF2005F76B00D8CC27 /* CategoryViewCell.swift */,
+				33813DB620074005000E4FD8 /* ProductCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -85,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				3390A6E12005F9DF00D8CC27 /* Category.swift */,
+				33813DB820074603000E4FD8 /* Product.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -92,7 +100,8 @@
 		3390A6DE2005F24B00D8CC27 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				3390A6CB2005F21D00D8CC27 /* CoderSwagViewController.swift */,
+				3390A6CB2005F21D00D8CC27 /* CategoryVC.swift */,
+				33813DBA200766D9000E4FD8 /* ProductVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -177,9 +186,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3390A6CC2005F21D00D8CC27 /* CoderSwagViewController.swift in Sources */,
+				3390A6CC2005F21D00D8CC27 /* CategoryVC.swift in Sources */,
 				3390A6E02005F76B00D8CC27 /* CategoryViewCell.swift in Sources */,
+				33813DB920074603000E4FD8 /* Product.swift in Sources */,
 				3390A6CA2005F21D00D8CC27 /* AppDelegate.swift in Sources */,
+				33813DBB200766D9000E4FD8 /* ProductVC.swift in Sources */,
+				33813DB720074005000E4FD8 /* ProductCell.swift in Sources */,
 				3390A6E22005F9DF00D8CC27 /* Category.swift in Sources */,
 				3390A6E520060D1100D8CC27 /* DataService.swift in Sources */,
 			);
