@@ -34,7 +34,7 @@
                                 <rect key="frame" x="0.0" y="53.5" width="375" height="549.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="categoryCell" rowHeight="131" id="uQk-XU-pei" customClass="CategoryViewCell" customModule="CoderSwage" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="categoryCell" rowHeight="131" id="uQk-XU-pei" customClass="CategoryViewCell" customModule="CoderSwage" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="131"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uQk-XU-pei" id="eb1-b1-OQg">
@@ -68,7 +68,6 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Hqi-Xw-EAx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="CYz-5V-0PM"/>
                             <constraint firstItem="Hqi-Xw-EAx" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="E0h-Nb-sze"/>
@@ -82,17 +81,17 @@
                     <navigationItem key="navigationItem" title="Coder Swag" id="WQP-9E-a2q"/>
                     <connections>
                         <outlet property="categoryTable" destination="Hqi-Xw-EAx" id="ra4-nI-kx7"/>
-                        <segue destination="cZz-nE-G6L" kind="show" identifier="ProductCell" id="Xbm-eU-4Ho"/>
+                        <segue destination="cZz-nE-G6L" kind="show" identifier="ProductsVC" id="Xbm-eU-4Ho"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="340" y="128"/>
         </scene>
-        <!--ProductVC-->
+        <!--ProductsVC-->
         <scene sceneID="JpU-rl-MCn">
             <objects>
-                <viewController id="cZz-nE-G6L" customClass="ProductVC" customModule="CoderSwage" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="cZz-nE-G6L" customClass="ProductsVC" customModule="CoderSwage" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wcj-Bs-47c">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -117,7 +116,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ZWy-8s-LQa" customClass="ProductCell" customModule="CoderSwage" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductsCell" id="ZWy-8s-LQa" customClass="ProductCell" customModule="CoderSwage" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="175" height="283"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -182,6 +181,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cY3-Ca-aef"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ioU-YA-Gbw"/>
                     <connections>
                         <outlet property="productCollectionView" destination="fUf-gI-GmN" id="Qdu-Ao-ZrK"/>
                     </connections>

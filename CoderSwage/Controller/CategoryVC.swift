@@ -18,16 +18,26 @@ class CategoryVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         categoryTable.dataSource = self
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return DataService.instance.getCateogry().count
+        return DataService.instance.getCategories().count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "categoryCell") as? CategoryViewCell {
-            let category = DataService.instance.getCateogry()[indexPath.row]
+            let category = DataService.instance.getCategories()[indexPath.row]
             cell.updateViewCell(category: category)
             return cell
         }else {
-            return UITableViewCell()
+            return CategoryViewCell()
+        }
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let category = DataService.instance.getCategories()[indexPath.row]
+        performSegue(withIdentifier:"ProductsVC", sender: category)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let productVC = segue.destination as? ProductsVC {
+            assert(sender as? Category != nil)
+            productVC.initProducts(category: sender as! Category)
         }
     }
 
